@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<!-- this is head section, 
+it is for storing metadata and
+items that are pulled in from other resources -->
+
+<head>
+    <title>Student Information System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet" />
+    <!-- <link href="./css/reset.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/main.js"></script>
+    <style>
+         .img {
+            width: 20%;
+        } 
+
+        body {
+            background: rgb(231, 226, 228);
+            /*font-family: 'Ubuntu', sans-serif;*/
+            /* line-height: 100px; */
+        }
+        button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] ,input[type=text],input[type=EamilId]{   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid rgb(132, 221, 132);   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 0px;   
+        background-color: rgb(211, 98, 196);  
+    }   
+    </style>
+</head>
+<!--There is an ID on the body so that the
+back to top button will go back to this ID-->
+
+<body id="body">
+    <header>
+        <div class="header-container">
+            <div id="company-logo">
+                <a href="./index.html">
+    </header>
+    <!--Hero Image section-->
+    <div id="hero-image">
+        <div class="overlay">
+            <h2 class="tag-line">Student Information System</h2>
+
+        </div>
+    </div>
+    <!--Top Button section-->
+    <a href="#body" id="topButton" title="Go to Top">Top</a>
+    <section id="our-story">
+        <div class="container">
+            <h3>Student Information System Login page</h3>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <!--Video  and Image section -->
+            <div id="gallery-wrapper">
+                
+                    <div class="gallery-item">
+                    </div>
+                        <div class="gallery-item">
+                            <div>
+                                <!-- <img src="images\stage4.jpg" alt="All Stage" /> -->
+                                <form>  
+                                    <div class="container">   
+                                        <label>Student Name : </label>   
+                                        <input type="text" placeholder="Enter Student Name" name="Student Name" required>  
+                                        <label>Password : </label>   
+                                        <input type="password" placeholder="Enter Password" name="password" required>
+                                        <label>Date of Birth : </label> 
+                                        <input type="text" placeholder="Enter Date of birth" name="DOB" required>  
+                                        <label>Email Id : </label>   
+                                        <input type="Email Id" placeholder="Enter Email Id" name="Email Id" required>  
+                                        <button type="submit">Login</button>   
+                                        <input type="checkbox" checked="checked"> Remember me   
+                                        <button type="button" class="cancelbtn"> Cancel</button>   
+                                        Forgot <a href="#"> password? </a>   
+                                    </div>   
+                                </form>     
+                            </div>
+                        </div>
+                    </div>
+                
+    </section>
+    <!--Events section-->
+    <section id="events">
+        <div class="container">
+            <h3>Learning Events</h3>
+            <table id="Learning-events-table">
+                <thead>
+                    <tr>
+                        <th>Submission Date</th>
+                        <th>College name</th>
+                        <th>College Location</th>
+                        <th>Topic that learnt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12/12/2022</td>
+                        <td>Poornima Institute of Engineering and Technology</td>
+                        <td>Ricco Industrial Area Sitapura</td>
+                        <td>I learnt HTML5 it is a hypertext markup language which is used
+                            to create skeleton of webpage.
+                            CSS it is called cascading stylesheet which is used to design the webpage
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <!--Contact Section-->
+        <div class="container">
+            <h3>Contact me</h3>
+            <p>
+                please send any text or feedback
+            </p>
+            <form action="https://mailthis.to/mk774466@gmail.com" method="POST" encType="multipart/form-data">
+                <fieldset>
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="email" name="_replyto" placeholder="Your email">
+                    <textarea name="message" placeholder="Enter your message here"></textarea>
+                    <input type="file" name="file" placeholder="Attachments (optional)">
+                    <input type="hidden" name="_subject" value="Contact form submitted">
+                    <input type="hidden" name="_after" value="https://myhomepage.net/">
+                    <input type="hidden" name="_honeypot" value="">
+                    <input type="hidden" name="_confirmation" value="">
+                    <input type="submit" value="Send">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <!--Footer section-->
+        <div class="footer-container">
+            <nav class="menu-wrapper">
+                <ul id="footer-menu">
+                    <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                    <li class="menu-item"><a href="#">Legal</a></li>
+                    <li class="menu-item"><a href="#">Sponsors</a></li>
+                </ul>
+            </nav>
+            <div id="Copyright">
+                &copy; Copyright -Machine Learning Models -All Right Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
